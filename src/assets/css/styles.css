@@ -16436,13 +16436,17 @@ textarea.form-control-lg {
   display: none;
 }
 .header .logo .logo-img {
-  max-width: 10%;
+  max-width: 40%;
   height: auto;
 }
 @media (max-width: 991.98px) {
   .header .logo .logo-img {
-    max-width: 45%;
-    min-width: 100px;
+    max-width: 48%;
+    min-width: 110px;
+  }
+  .construction-hero-title {
+    font-size: clamp(2.2rem, 10vw, 3.4rem) !important;
+    line-height: 1.05 !important;
   }
 }
 .header .header-menu .header-item .header-link .animate-spin {
@@ -16799,4 +16803,91 @@ ul {
 .btn-dark:hover {
   color: var(--bs-dark);
   background-color: var(--bs-white);
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/* Awwwards-inspired advertising page blocks */
+.awwwards-plans {
+  background: radial-gradient(circle at 20% 20%, rgba(166, 124, 82, 0.2), transparent 45%), #0f171c !important;
+}
+.awwwards-plans h2,
+.awwwards-plans h3,
+.awwwards-plans h5,
+.awwwards-plans h6 {
+  color: #f7f9fb;
+}
+.awwwards-plans .awwwards-plan-card {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 20px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.04));
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 20px 36px rgba(0, 0, 0, 0.22);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+.awwwards-plans .awwwards-plan-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(166, 124, 82, 0.7);
+}
+.awwwards-plans .awwwards-plan-card .card-body {
+  color: rgba(247, 249, 251, 0.82);
+}
+.awwwards-plans .awwwards-plan-card ul h6 {
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.awwwards-logos {
+  background: #f6f8fa;
+}
+.awwwards-logos .awwwards-logo-card {
+  border: 1px solid rgba(31, 42, 46, 0.09);
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(15, 23, 28, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.awwwards-logos .awwwards-logo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(15, 23, 28, 0.13);
+}
+.awwwards-logos .awwwards-logo-card iconify-icon {
+  opacity: 0.92;
+}
+.awwwards-logo-marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+.awwwards-logo-track {
+  width: max-content;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  animation: awwwardsLogoScroll 35s linear infinite;
+}
+.awwwards-logo-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-radius: 9999px;
+  border: 1px solid rgba(31, 42, 46, 0.12);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 8px 20px rgba(15, 23, 28, 0.08);
+  white-space: nowrap;
+}
+.awwwards-logo-pill span {
+  font-weight: 700;
+  font-size: 14px;
+  color: #1f2a2e;
+}
+@keyframes awwwardsLogoScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+/*# sourceMappingURL=styles.css.map */

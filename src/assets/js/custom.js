@@ -36,6 +36,28 @@ $(function () {
         }
     })
 
+    // Brand Logos Owl Carousel
+    $('.brand-logos-slider .owl-carousel').owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 2500,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 2
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 5
+            }
+        }
+    })
+
 
     // Count
     $('.count').each(function () {
